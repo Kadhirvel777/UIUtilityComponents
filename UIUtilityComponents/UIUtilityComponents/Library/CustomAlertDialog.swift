@@ -21,13 +21,13 @@ public class CustomAlertDialog: UIViewController {
     @IBOutlet weak var statusImageView: UIImageView!
     @IBOutlet weak var alertView: UIView!
     
-    var alertTitle = ""
-    var alertMessage = ""
-    var okButtonTitle = "Ok"
-    var cancelButtonTitle = "Cancel"
-    var alertTag = 0
-    var statusImage = UIImage.init(named: "smiley")
-    var isCancelButtonHidden = false
+    public var alertTitle = ""
+    public var alertMessage = ""
+    public var okButtonTitle = "Ok"
+    public var cancelButtonTitle = "Cancel"
+    public var alertTag = 0
+    public var statusImage = UIImage.init(named: "smiley")
+    public var isCancelButtonHidden = false
     
     weak public var delegate: CustomAlertDialogDelegate?
 
@@ -45,7 +45,7 @@ public class CustomAlertDialog: UIViewController {
         setupAlert()
     }
     
-    func show() {
+    public func show() {
         if #available(iOS 13, *) {
             UIApplication.shared.windows.first?.rootViewController?.present(self, animated: true, completion: nil)
         } else {
