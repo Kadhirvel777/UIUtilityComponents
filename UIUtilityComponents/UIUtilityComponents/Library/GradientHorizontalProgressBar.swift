@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class GradientHorizontalProgressBar: UIView {
+public class GradientHorizontalProgressBar: UIView {
     @IBInspectable var color: UIColor = .gray {
         didSet { setNeedsDisplay() }
     }
@@ -57,7 +57,7 @@ class GradientHorizontalProgressBar: UIView {
         gradientLayer.add(flowAnimation, forKey: "flowAnimation")
     }
 
-    override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         backgroundMask.path = UIBezierPath(roundedRect: rect, cornerRadius: rect.height * 0.25).cgPath
         layer.mask = backgroundMask
 

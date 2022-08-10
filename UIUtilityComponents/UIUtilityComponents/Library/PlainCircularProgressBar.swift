@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class PlainCircularProgressBar: UIView {
+public class PlainCircularProgressBar: UIView {
     @IBInspectable var color: UIColor? = .gray {
         didSet { setNeedsDisplay() }
     }
@@ -45,7 +45,7 @@ class PlainCircularProgressBar: UIView {
         layer.transform = CATransform3DMakeRotation(CGFloat(90 * Double.pi / 180), 0, 0, -1)
     }
 
-    override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         let circlePath = UIBezierPath(ovalIn: rect.insetBy(dx: ringWidth / 2, dy: ringWidth / 2))
         backgroundMask.path = circlePath.cgPath
 

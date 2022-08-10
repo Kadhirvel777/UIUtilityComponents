@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class GradientCircularProgressBar: UIView {
+public class GradientCircularProgressBar: UIView {
     @IBInspectable var color: UIColor = .gray {
         didSet { setNeedsDisplay() }
     }
@@ -71,7 +71,7 @@ class GradientCircularProgressBar: UIView {
         gradientLayer.add(endPointAnimation, forKey: "endPointAnimation")
     }
 
-    override func draw(_ rect: CGRect) {
+    public override func draw(_ rect: CGRect) {
         let circlePath = UIBezierPath(ovalIn: rect.insetBy(dx: ringWidth / 2, dy: ringWidth / 2))
         backgroundMask.path = circlePath.cgPath
 

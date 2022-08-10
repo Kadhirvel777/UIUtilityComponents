@@ -29,6 +29,7 @@
 		494BB75628A41B2D005C2420 /* TextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BB74128A41B2C005C2420 /* TextLabel.swift */; };
 		494BB75728A41B2D005C2420 /* PlainCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BB74228A41B2C005C2420 /* PlainCircularProgressBar.swift */; };
 		494BB75828A41B2D005C2420 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BB74328A41B2C005C2420 /* Toast.swift */; };
+		494BB76528A42B05005C2420 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494BB76428A42B05005C2420 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		494BB74128A41B2C005C2420 /* TextLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLabel.swift; sourceTree = "<group>"; };
 		494BB74228A41B2C005C2420 /* PlainCircularProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainCircularProgressBar.swift; sourceTree = "<group>"; };
 		494BB74328A41B2C005C2420 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		494BB76428A42B05005C2420 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				494BB72728A41B19005C2420 /* UIUtilityComponents.h */,
 				494BB72E28A41B2C005C2420 /* Library */,
+				494BB76428A42B05005C2420 /* Media.xcassets */,
 			);
 			path = UIUtilityComponents;
 			sourceTree = "<group>";
@@ -96,29 +99,77 @@
 		494BB72E28A41B2C005C2420 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				494BB72F28A41B2C005C2420 /* CustomTimePickerViewController.swift */,
-				494BB73028A41B2C005C2420 /* PlainHorizontalProgressBar.swift */,
-				494BB73128A41B2C005C2420 /* CustomTheme.swift */,
-				494BB73228A41B2C005C2420 /* RotatingCircularGradientProgressBar.swift */,
-				494BB73328A41B2C005C2420 /* AlphaTransitioning.swift */,
-				494BB73428A41B2C005C2420 /* ColDateCell.swift */,
-				494BB73528A41B2C005C2420 /* GradientHorizontalProgressBar.swift */,
-				494BB73628A41B2C005C2420 /* CustomAlertDialog.xib */,
-				494BB73728A41B2C005C2420 /* CustomDatePickerView.swift */,
-				494BB73828A41B2C005C2420 /* CustomTimePickerResult.swift */,
-				494BB73928A41B2C005C2420 /* WheelViewController.swift */,
-				494BB73A28A41B2C005C2420 /* CarouselLayout.swift */,
-				494BB73B28A41B2C005C2420 /* DatePickerView.swift */,
-				494BB73C28A41B2C005C2420 /* CustomAlertDialog.swift */,
-				494BB73D28A41B2C005C2420 /* GradientCircularProgressBar.swift */,
-				494BB73E28A41B2C005C2420 /* TimeMeridian.swift */,
-				494BB73F28A41B2C005C2420 /* ColCell.swift */,
-				494BB74028A41B2C005C2420 /* CalendarController.swift */,
-				494BB74128A41B2C005C2420 /* TextLabel.swift */,
-				494BB74228A41B2C005C2420 /* PlainCircularProgressBar.swift */,
-				494BB74328A41B2C005C2420 /* Toast.swift */,
+				494BB76728A42B93005C2420 /* CustomTimePicker */,
+				494BB76A28A42C4C005C2420 /* Progress Bar */,
+				494BB76928A42C32005C2420 /* Carousel */,
+				494BB76828A42BEC005C2420 /* DatePicker */,
+				494BB76328A42AC6005C2420 /* CustomAlert */,
+				494BB76628A42B2A005C2420 /* Toast */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		494BB76328A42AC6005C2420 /* CustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				494BB73628A41B2C005C2420 /* CustomAlertDialog.xib */,
+				494BB73C28A41B2C005C2420 /* CustomAlertDialog.swift */,
+			);
+			name = CustomAlert;
+			sourceTree = "<group>";
+		};
+		494BB76628A42B2A005C2420 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				494BB74328A41B2C005C2420 /* Toast.swift */,
+			);
+			name = Toast;
+			sourceTree = "<group>";
+		};
+		494BB76728A42B93005C2420 /* CustomTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				494BB73328A41B2C005C2420 /* AlphaTransitioning.swift */,
+				494BB73E28A41B2C005C2420 /* TimeMeridian.swift */,
+				494BB73128A41B2C005C2420 /* CustomTheme.swift */,
+				494BB73928A41B2C005C2420 /* WheelViewController.swift */,
+				494BB73828A41B2C005C2420 /* CustomTimePickerResult.swift */,
+				494BB72F28A41B2C005C2420 /* CustomTimePickerViewController.swift */,
+			);
+			name = CustomTimePicker;
+			sourceTree = "<group>";
+		};
+		494BB76828A42BEC005C2420 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				494BB73B28A41B2C005C2420 /* DatePickerView.swift */,
+				494BB73428A41B2C005C2420 /* ColDateCell.swift */,
+				494BB74128A41B2C005C2420 /* TextLabel.swift */,
+				494BB73728A41B2C005C2420 /* CustomDatePickerView.swift */,
+				494BB74028A41B2C005C2420 /* CalendarController.swift */,
+				494BB73F28A41B2C005C2420 /* ColCell.swift */,
+			);
+			name = DatePicker;
+			sourceTree = "<group>";
+		};
+		494BB76928A42C32005C2420 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				494BB73A28A41B2C005C2420 /* CarouselLayout.swift */,
+			);
+			name = Carousel;
+			sourceTree = "<group>";
+		};
+		494BB76A28A42C4C005C2420 /* Progress Bar */ = {
+			isa = PBXGroup;
+			children = (
+				494BB73028A41B2C005C2420 /* PlainHorizontalProgressBar.swift */,
+				494BB73228A41B2C005C2420 /* RotatingCircularGradientProgressBar.swift */,
+				494BB73528A41B2C005C2420 /* GradientHorizontalProgressBar.swift */,
+				494BB73D28A41B2C005C2420 /* GradientCircularProgressBar.swift */,
+				494BB74228A41B2C005C2420 /* PlainCircularProgressBar.swift */,
+			);
+			name = "Progress Bar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494BB76528A42B05005C2420 /* Media.xcassets in Resources */,
 				494BB74B28A41B2D005C2420 /* CustomAlertDialog.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
