@@ -10,15 +10,15 @@ import UIKit
 
 @IBDesignable
 public class GradientCircularProgressBar: UIView {
-    @IBInspectable var color: UIColor = .gray {
+    @IBInspectable public var color: UIColor = .gray {
         didSet { setNeedsDisplay() }
     }
-    @IBInspectable var gradientColor: UIColor = .white {
+    @IBInspectable public var gradientColor: UIColor = .white {
         didSet { setNeedsDisplay() }
     }
-    @IBInspectable var ringWidth: CGFloat = 5
+    @IBInspectable public var ringWidth: CGFloat = 5
 
-    var progress: CGFloat = 0 {
+    public var progress: CGFloat = 0 {
         didSet { setNeedsDisplay() }
     }
 

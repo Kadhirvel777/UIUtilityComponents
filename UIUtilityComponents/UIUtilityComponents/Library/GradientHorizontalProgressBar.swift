@@ -10,14 +10,14 @@ import UIKit
 
 @IBDesignable
 public class GradientHorizontalProgressBar: UIView {
-    @IBInspectable var color: UIColor = .gray {
+    @IBInspectable public var color: UIColor = .gray {
         didSet { setNeedsDisplay() }
     }
-    @IBInspectable var gradientColor: UIColor = .white {
+    @IBInspectable public var gradientColor: UIColor = .white {
         didSet { setNeedsDisplay() }
     }
 
-    var progress: CGFloat = 0 {
+    public var progress: CGFloat = 0 {
         didSet { setNeedsDisplay() }
     }
 
