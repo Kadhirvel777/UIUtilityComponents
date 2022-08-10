@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol CustomAlertDialogDelegate: class {
+public protocol CustomAlertDialogDelegate: class {
     func okButtonPressed(_ alert: CustomAlertDialog, alertTag: Int)
     func cancelButtonPressed(_ alert: CustomAlertDialog, alertTag: Int)
 }
@@ -29,9 +29,9 @@ public class CustomAlertDialog: UIViewController {
     var statusImage = UIImage.init(named: "smiley")
     var isCancelButtonHidden = false
     
-    weak var delegate: CustomAlertDialogDelegate?
+    weak public var delegate: CustomAlertDialogDelegate?
 
-    init() {
+    public init() {
         super.init(nibName: "CustomAlertDialog", bundle: Bundle(for: CustomAlertDialog.self))
         self.modalPresentationStyle = .overCurrentContext
         self.modalTransitionStyle = .crossDissolve
