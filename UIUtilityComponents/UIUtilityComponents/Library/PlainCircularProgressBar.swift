@@ -8,14 +8,13 @@
 import Foundation
 import UIKit
 
-@IBDesignable
-public class PlainCircularProgressBar: UIView {
-    @IBInspectable public var color: UIColor? = .gray {
+open class PlainCircularProgressBar: UIView {
+    open var color: UIColor? = .gray {
         didSet { setNeedsDisplay() }
     }
-    @IBInspectable public var ringWidth: CGFloat = 5
+    open var ringWidth: CGFloat = 5
 
-    public var progress: CGFloat = 0 {
+    open var progress: CGFloat = 0 {
         didSet { setNeedsDisplay() }
     }
 
@@ -28,7 +27,7 @@ public class PlainCircularProgressBar: UIView {
 
     }
 
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         setupLayers()
     }

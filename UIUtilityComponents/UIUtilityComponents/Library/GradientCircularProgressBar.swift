@@ -8,17 +8,17 @@
 import Foundation
 import UIKit
 
-@IBDesignable
-public class GradientCircularProgressBar: UIView {
-    @IBInspectable public var color: UIColor = .gray {
-        didSet { setNeedsDisplay() }
-    }
-    @IBInspectable public var gradientColor: UIColor = .white {
-        didSet { setNeedsDisplay() }
-    }
-    @IBInspectable public var ringWidth: CGFloat = 5
 
-    public var progress: CGFloat = 0 {
+public class GradientCircularProgressBar: UIView {
+    open var color: UIColor = .gray {
+        didSet { setNeedsDisplay() }
+    }
+    open var gradientColor: UIColor = .white {
+        didSet { setNeedsDisplay() }
+    }
+    open var ringWidth: CGFloat = 5
+
+    open var progress: CGFloat = 0 {
         didSet { setNeedsDisplay() }
     }
 

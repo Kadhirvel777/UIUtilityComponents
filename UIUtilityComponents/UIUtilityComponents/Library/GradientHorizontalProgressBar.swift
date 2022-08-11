@@ -8,16 +8,15 @@
 import Foundation
 import UIKit
 
-@IBDesignable
-public class GradientHorizontalProgressBar: UIView {
-    @IBInspectable public var color: UIColor = .gray {
+open class GradientHorizontalProgressBar: UIView {
+    open var color: UIColor = .gray {
         didSet { setNeedsDisplay() }
     }
-    @IBInspectable public var gradientColor: UIColor = .white {
+    open var gradientColor: UIColor = .white {
         didSet { setNeedsDisplay() }
     }
 
-    public var progress: CGFloat = 0 {
+    open var progress: CGFloat = 0 {
         didSet { setNeedsDisplay() }
     }
 
@@ -31,7 +30,7 @@ public class GradientHorizontalProgressBar: UIView {
         createAnimation()
     }
 
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         setupLayers()
         createAnimation()

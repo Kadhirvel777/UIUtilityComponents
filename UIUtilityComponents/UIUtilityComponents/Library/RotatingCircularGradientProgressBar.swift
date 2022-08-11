@@ -8,15 +8,14 @@
 import Foundation
 import UIKit
 
-@IBDesignable
 public class RotatingCircularGradientProgressBar: UIView {
-    @IBInspectable public var color: UIColor = .gray {
+    open var color: UIColor = .gray {
         didSet { setNeedsDisplay() }
     }
-    @IBInspectable public var gradientColor: UIColor = .white {
+    open var gradientColor: UIColor = .white {
         didSet { setNeedsDisplay() }
     }
-    @IBInspectable public var ringWidth: CGFloat = 5
+    open var ringWidth: CGFloat = 5
 
     public var progress: CGFloat = 0 {
         didSet { setNeedsDisplay() }

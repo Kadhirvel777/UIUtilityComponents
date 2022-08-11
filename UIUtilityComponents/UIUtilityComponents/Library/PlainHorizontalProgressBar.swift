@@ -8,13 +8,13 @@
 import Foundation
 import UIKit
 
-@IBDesignable
-public class PlainHorizontalProgressBar: UIView {
-    @IBInspectable public var color: UIColor = .gray {
+
+open class PlainHorizontalProgressBar: UIView {
+    open var color: UIColor = .gray {
         didSet { setNeedsDisplay() }
     }
 
-    public var progress: CGFloat = 0 {
+    open var progress: CGFloat = 0 {
         didSet { setNeedsDisplay() }
     }
 
@@ -26,7 +26,7 @@ public class PlainHorizontalProgressBar: UIView {
         setupLayers()
     }
 
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         setupLayers()
     }
@@ -35,7 +35,7 @@ public class PlainHorizontalProgressBar: UIView {
         layer.addSublayer(progressLayer)
     }
 
-    public override func draw(_ rect: CGRect) {
+    open override func draw(_ rect: CGRect) {
         backgroundMask.path = UIBezierPath(roundedRect: rect, cornerRadius: rect.height * 0.25).cgPath
         layer.mask = backgroundMask
 
