@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     # Internal dependencies
     
     # Third Party Dependencies
-   sp.source_files = 'UIUtilityComponents/**/*.{swift}'
+   sp.source_files = 'UIUtilityComponents/**/*.{swift,xib}'
    sp.resource_bundles = {
       'UIUtilityComponents' => ["UIUtilityComponents/*.{html,xib}"]
     }
