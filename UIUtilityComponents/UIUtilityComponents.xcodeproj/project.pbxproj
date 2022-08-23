@@ -30,6 +30,7 @@
 		494BB75728A41B2D005C2420 /* PlainCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BB74228A41B2C005C2420 /* PlainCircularProgressBar.swift */; };
 		494BB75828A41B2D005C2420 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BB74328A41B2C005C2420 /* Toast.swift */; };
 		494BB76528A42B05005C2420 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494BB76428A42B05005C2420 /* Media.xcassets */; };
+		494E6EBC28B5269900B89962 /* ReusableTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E6EBB28B5269800B89962 /* ReusableTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		494BB74228A41B2C005C2420 /* PlainCircularProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainCircularProgressBar.swift; sourceTree = "<group>"; };
 		494BB74328A41B2C005C2420 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		494BB76428A42B05005C2420 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		494E6EBB28B5269800B89962 /* ReusableTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		494BB72E28A41B2C005C2420 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				494E6EBD28B5269D00B89962 /* ReusableTable */,
 				494BB76728A42B93005C2420 /* CustomTimePicker */,
 				494BB76A28A42C4C005C2420 /* Progress Bar */,
 				494BB76928A42C32005C2420 /* Carousel */,
@@ -170,6 +173,14 @@
 				494BB74228A41B2C005C2420 /* PlainCircularProgressBar.swift */,
 			);
 			name = "Progress Bar";
+			sourceTree = "<group>";
+		};
+		494E6EBD28B5269D00B89962 /* ReusableTable */ = {
+			isa = PBXGroup;
+			children = (
+				494E6EBB28B5269800B89962 /* ReusableTable.swift */,
+			);
+			name = ReusableTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 				494BB75328A41B2D005C2420 /* TimeMeridian.swift in Sources */,
 				494BB74928A41B2D005C2420 /* ColDateCell.swift in Sources */,
 				494BB75028A41B2D005C2420 /* DatePickerView.swift in Sources */,
+				494E6EBC28B5269900B89962 /* ReusableTable.swift in Sources */,
 				494BB74728A41B2D005C2420 /* RotatingCircularGradientProgressBar.swift in Sources */,
 				494BB74528A41B2D005C2420 /* PlainHorizontalProgressBar.swift in Sources */,
 				494BB74428A41B2D005C2420 /* CustomTimePickerViewController.swift in Sources */,

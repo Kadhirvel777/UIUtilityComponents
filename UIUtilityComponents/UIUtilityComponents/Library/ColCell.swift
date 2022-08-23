@@ -65,28 +65,8 @@ class ColCell: UICollectionViewCell {
                     Col.leftAnchor.constraint(equalTo: leftAnchor, constant: 0),
                     Col.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0)
         ])
-        
-//        let LongTouch = UILongPressGestureRecognizer(target: self, action: #selector(longTouch(long:)))
-//        LongTouch.minimumPressDuration = 0.3
-//        Col.addGestureRecognizer(LongTouch)
     }
     
-//    @objc func longTouch(long:UILongPressGestureRecognizer) {
-//        guard long.state == .began else {
-//            return
-//        }
-//        let soundID = SystemSoundID(1519)
-//        AudioServicesPlaySystemSound(soundID)
-//
-//        let calendar = CalendarController()
-//        calendar.modalTransitionStyle = .crossDissolve
-//        calendar.modalPresentationStyle = .overCurrentContext
-//        calendar.CustomView.Selected = Selected
-//        calendar.CustomView.DATETYPE = CellType
-//        calendar.CustomView.colcell = self
-//        calendar.CustomView.backgroundColor = WeekColor
-//        UIApplication.shared.keyWindow?.rootViewController?.present(calendar, animated: true, completion: nil)
-//    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
